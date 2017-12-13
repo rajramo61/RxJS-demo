@@ -1,7 +1,11 @@
-let userClicksSearchButton1 = Rx.Observable.fromEvent(
-    $("#cancel"),
-    'click'
-).map((event) => {
-    console.log("on click");
-    return "rajramo61";
-});
+
+function getModalObservable(){
+            return Rx.Observable.fromPromise(
+                $.get('https://api.github.com/users/RichardWarburton')
+            );
+}
+
+
+
+
+

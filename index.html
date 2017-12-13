@@ -6,7 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.5/Rx.js"></script>
-
+    <script src="my-modal-demo.js"></script>
     <title>RxJs</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
     <br>
     <br>
     <!-- Button trigger modal -->
-    <button id="my-modal" onclick="modalPopup('data.json', myCallback)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <button id="my-modal" onclick="modalPopup('data.json')" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Launch demo modal
     </button>
 
@@ -39,17 +39,15 @@
                 </div>
                 <div class="modal-body">
                     <p> Data pulled from server </p>
-                    <img class="image" src="">
                     <div class="login1">dummy</div>
                 </div>
                 <div class="modal-footer">
                     <button id="cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button id="save-data" type="button" class="btn btn-primary">Save changes</button>
+                    <button id="save-data" type="button" class="btn btn-primary" onclick="myCallback()">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="modal-demo.js"></script>
-    <script src="my-modal-demo.js"></script>
 </body>
 </html>
