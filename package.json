@@ -1,0 +1,15 @@
+{
+  "name": "rxjs-demo",
+  "version": "1.0.0",
+  "description": "RxJs Demos",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajesh Dwivedi",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
