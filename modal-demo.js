@@ -5,7 +5,7 @@ let myCallback = function () {
     getModalObservable()
         .subscribe((response) => {
             console.log("Response data : %o", response);
-            renderUser(
+            showUser(
                 response.login,
                 response.html_url,
                 response.avatar_url
@@ -27,7 +27,7 @@ let modalPopup = function(fileName){
 
 };
 
-function renderUser(login, href, imgSrc) {
+function showUser(login, href, imgSrc) {
     console.log("Login = %s, href = %s, image = %s", login, href, imgSrc);
     $('.data-from-modal').text(login);
     $(".image-from-modal").attr('src', imgSrc).show()
