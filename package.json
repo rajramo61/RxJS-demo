@@ -9,7 +9,7 @@
   },
   "author": "Rajesh Dwivedi",
   "license": "ISC",
-  "dependencies": {
-    "live-server": "^1.2.0"
+  "devDependencies": {
+    "live-server": "^1.2.1"
   }
 }
